@@ -4,12 +4,15 @@
 
 # List to fill in by the user of times
 time_list = []
+
 # Variables all set to 0 so as to receive inputs and store in list
+
 time = 0
 total_time = 0
 fastest = 0
 
 # While loop that repeats until the user enters -1 or 0
+
 while time != -1:
     time = float(input("What was the time of the contestant?: "))
 
