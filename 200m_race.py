@@ -24,9 +24,7 @@ while time != -1:
         break
 
 # Used to calculate the fastest time
-for times in time_list:
-    if times >= fastest:
-        fastest = times
+fastest = sorted(time_list)[0]
 
 # Used to work out and print the average time, and print the fastest time
 average = total_time / len(time_list)
