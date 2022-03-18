@@ -1,35 +1,21 @@
-print("Maximum students is 20")
-studentList = []
-gradeList = []
+# 09 label side pack.py
 
+from tkinter import *
 
-def mainloop():
-    maxstudentList = 20
-    while len(studentList) < maxstudentList:
-        student = input("Enter student name: ")
-        if not student.isalpha():
-            print("Please enter valid characters in students name")
-        else:
+root = Tk()
 
-            grades = int(input("Enter students grade: "))
-            if grades >= 0 and grades <= 100:
-                studentList.append(student)
-                gradeList.append(grades)
+root.title("Excercise 1")
 
-                print("Current students: ", studentList)
-                print("Grades of students:", gradeList)
-            else:
-                print("Not a correct grade")
+computer = Label(root, bg="lime", fg="white", text="Computer",
+                 font=("Times", 50, "italic"))
+computer.pack(fill=Y, side=LEFT)
 
+science = Label(root, bg="blue", fg="yellow", text="Science is",
+                font=("Comic sans MS", 50, "bold"))
+science.pack(fill=Y, side=RIGHT)
 
-mainloop()
+awesome = Label(root, bg="orange", fg="red", text="Awesome",
+                font=("Arial black", 50))
+awesome.pack()
 
-
-def average():
-    total = sum(gradeList)
-    length = len(gradeList)
-    averages = total / length
-    print("The average grade: ", averages)
-
-
-average()
+root.mainloop()

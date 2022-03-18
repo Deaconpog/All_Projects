@@ -1,4 +1,4 @@
-# 08_label stack2.py
+# 05_label stack.py
 
 from tkinter import *
 
@@ -8,14 +8,14 @@ root.title("Excercise 1")
 
 computer = Label(root, bg="lime", fg="white", text="Computer",
                  font=("Times", 50, "italic"))
-computer.pack(fill=X)
+computer.pack()
 
 science = Label(root, bg="blue", fg="yellow", text="Science is",
                 font=("Comic sans MS", 50, "bold"))
-science.pack(fill=X)
+science.pack()
 
 awesome = Label(root, bg="orange", fg="red", text="Awesome",
                 font=("Arial black", 50))
-awesome.pack(fill=X)
+awesome.pack()
 
 root.mainloop()
